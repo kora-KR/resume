@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+#app[data-v-5c74b94a] {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; position: relative;
+}
+html[data-v-5c74b94a] {
+  min-height: 100vh;
+}
+*[data-v-5c74b94a]{
+  box-sizing: border-box;
+}
+
+
+pre[data-v-7a98e826]{
+}
+@media (max-width:500px){
+pre[data-v-7a98e826]{
+}
+}
+.code[data-v-7a98e826] {
+  background: #900
+}
+
+@media (max-width:500px){
+.resumeEditor[data-v-75f33a9b]{
+}
+}
+.htmlMode[data-v-75f33a9b] {
+  animation: flip 2s;
+}
+@keyframes flip {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+*{margin: 0; padding: 0;}
+*{box-sizing: border-box;}
+*::before{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+/*# sourceMappingURL=app.911f8a53c28179c1a9176ad0b66464ff.css.map*/

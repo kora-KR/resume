@@ -2,7 +2,7 @@
 
 > This is my resume
 
-[预览](https://koras.cn)
+[预览](https://www.koras.cn)
 
 ## 使用方法
 

@@ -1,4 +1,4 @@
-# impressPHP + 动画加载 双模板简历 
+# impress.js（PHP） + marked.js（CSS） 双模板简历 
 
 > This is my resume
 

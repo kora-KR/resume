@@ -25,8 +25,12 @@
     <div id="impress-toolbar" class="hint">
       <p>- 使用空格或者方向键来移动 -</p>
       <div>
-        <div id="hintLeft" data-flag="hintLeft" @click="handleClickPrev">上一张</div>
-        <div id="hintRight" data-flag="hintRight" @click="handleClickNext">下一张</div>
+        <div id="hintLeft" data-flag="hintLeft" @click="handleClickPrev">
+          上一张
+        </div>
+        <div id="hintRight" data-flag="hintRight" @click="handleClickNext">
+          下一张
+        </div>
         <div @click="handleClickToHome">返回首页</div>
       </div>
     </div>
@@ -46,7 +50,7 @@
           这个场景没有旋转和缩放。
       -->
       <!--<div id="bored" class="step slide" data-x="-600" data-y="-1500">-->
-        <!--<div>dsad</div>-->
+      <!--<div>dsad</div>-->
       <!--</div>-->
 
       <!--
@@ -64,11 +68,11 @@
 
       -->
       <!--<div class="step slide" data-x="0" data-y="-1500">-->
-        <!--<q>你有没有想过，在 <strong>现代浏览器</strong> 光辉下，我们可以不再受限于 <strong>老旧浏览器的残忍压迫</strong> ？</q>-->
+      <!--<q>你有没有想过，在 <strong>现代浏览器</strong> 光辉下，我们可以不再受限于 <strong>老旧浏览器的残忍压迫</strong> ？</q>-->
       <!--</div>-->
 
       <!--<div class="step slide" data-x="1000" data-y="-1500">-->
-        <!--<q>你难道不想使用 <strong>华丽的舞台效果</strong> 来 <strong>震惊你的观众</strong> 吗？</q>-->
+      <!--<q>你难道不想使用 <strong>华丽的舞台效果</strong> 来 <strong>震惊你的观众</strong> 吗？</q>-->
       <!--</div>-->
 
       <!--
@@ -80,13 +84,13 @@
 
       -->
       <!--<div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">-->
-        <!--<p>它是一个 <strong>演示工具</strong> <br/>-->
-          <!--受<a href="http://prezi.com" target="_blank">prezi.com</a>启发 <br/>-->
-          <!--基于现代浏览器中 <strong>强大的CSS3特效</strong> 开发而成</p>-->
+      <!--<p>它是一个 <strong>演示工具</strong> <br/>-->
+      <!--受<a href="http://prezi.com" target="_blank">prezi.com</a>启发 <br/>-->
+      <!--基于现代浏览器中 <strong>强大的CSS3特效</strong> 开发而成</p>-->
       <!--</div>-->
 
       <!--<div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">-->
-        <!--<p>它可以具象化您 <big style="font-size:larger">伟大</big> </p>-->
+      <!--<p>它可以具象化您 <big style="font-size:larger">伟大</big> </p>-->
       <!--</div>-->
 
       <!--
@@ -98,7 +102,7 @@
 
       -->
       <!--<div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">-->
-        <!--<p>或者 <span style="font-size:smaller">细致</span> 的 <span class="thoughts">想法</span></p>-->
+      <!--<p>或者 <span style="font-size:smaller">细致</span> 的 <span class="thoughts">想法</span></p>-->
       <!--</div>-->
 
       <!--
@@ -117,25 +121,68 @@
           播放的step元素具有`present`类属性。
 
       -->
-      <div id="ing" class="step" data-x="1500" data-y="-1850" data-rotate="0" data-scale="6">
+      <div
+        id="ing"
+        class="step"
+        data-x="1500"
+        data-y="-1850"
+        data-rotate="0"
+        data-scale="6"
+      >
         <div class="step_one">
-          <font color="#666"><font color="#cc7832">const</font> person = <font color="#cc7832">new</font> Map()</font>
-          <br>
-          <font color="#666">person.<font color="#ffc66d">set</font>( <font color="#46bd87">'name'</font>, <font color="#46bd87">'kora'</font> )</font>
-          <br>
-          <font color="#666">person.<font color="#ffc66d">set</font>( <font color="#46bd87">'age'</font>, <font color="#46bd87">'25'</font> )</font>
-          <br>
-          <font color="#666">person.<font color="#ffc66d">set</font>( <font color="#46bd87">'sex'</font>, person.<font color="#ffc66d">get</font>( <font color="#46bd87">'name'</font> )  ==  <font color="#46bd87">'kora'</font>  &&  <font color="#46bd87">'Mr'</font> )</font>
-          <br>
-          <font color="#666">person.<font color="#ffc66d">set</font>( <font color="#46bd87">'say'</font>, () => { console.<font color="#ffc66d">info</font>( <font color="#46bd87">'it's Kora'</font> ) })</font>
-          <br>
-          <br>
-          <font color="#666">person.<font color="ffc66d">get</font>(<font color="#46bd87">'say'</font>)()</font>
-          <br>
-          <font style="margin-top: 30px; display: block; width: 100%; text-align: center; font-size: 16px">控制台有答案（F12 + F5）</font>
+          <font color="#666"
+            ><font color="#cc7832">const</font> person =
+            <font color="#cc7832">new</font> Map()</font
+          >
+          <br />
+          <font color="#666"
+            >person.<font color="#ffc66d">set</font>(
+            <font color="#46bd87">'name'</font>,
+            <font color="#46bd87">'kora'</font> )</font
+          >
+          <br />
+          <font color="#666"
+            >person.<font color="#ffc66d">set</font>(
+            <font color="#46bd87">'age'</font>,
+            <font color="#46bd87">'25'</font> )</font
+          >
+          <br />
+          <font color="#666"
+            >person.<font color="#ffc66d">set</font>(
+            <font color="#46bd87">'sex'</font>, person.<font color="#ffc66d"
+              >get</font
+            >( <font color="#46bd87">'name'</font> ) ==
+            <font color="#46bd87">'kora'</font> &&
+            <font color="#46bd87">'Mr'</font> )</font
+          >
+          <br />
+          <font color="#666"
+            >person.<font color="#ffc66d">set</font>(
+            <font color="#46bd87">'say'</font>, () => { console.<font
+              color="#ffc66d"
+              >info</font
+            >( <font color="#46bd87">'it's Kora'</font> ) })</font
+          >
+          <br />
+          <br />
+          <font color="#666"
+            >person.<font color="ffc66d">get</font>(<font color="#46bd87"
+              >'say'</font
+            >)()</font
+          >
+          <br />
+          <font
+            style="
+              margin-top: 30px;
+              display: block;
+              width: 100%;
+              text-align: center;
+              font-size: 16px;
+            "
+            >控制台有答案（F12 + F5）</font
+          >
         </div>
       </div>
-
 
       <!--
 
@@ -146,13 +193,35 @@
       如果从这个场景退出，它会被还原原来的大小（缩小4倍）。
 
   -->
-      <div id="title" class="step" data-x="1500" data-y="1500" data-scale="4" style="color: #94e9ec">
-        <h2 style="color: #eee">嗨，我是 <font color="#94e9ec" style="font-size: 60px; font-family: JasmineUPC">康润</font></h2>
-        <span>现居<span class="animates" style="color: aqua">青岛</span>，往后余生也将爱在青岛的前端码农</span>
+      <div
+        id="title"
+        class="step"
+        data-x="1500"
+        data-y="1500"
+        data-scale="4"
+        style="color: #94e9ec"
+      >
+        <h2 style="color: #eee">
+          嗨，我是
+          <font color="#94e9ec" style="font-size: 60px; font-family: JasmineUPC"
+            >康润</font
+          >
+        </h2>
+        <span
+          >现居<span class="animates" style="color: aqua">青岛</span
+          >，往后余生也将爱在青岛的前端码农</span
+        >
         <div>正在致力于全栈发展的道路上...</div>
       </div>
 
-      <div id="its" class="step" data-x="950" data-y="3000" data-rotate="90" data-scale="5">
+      <div
+        id="its"
+        class="step"
+        data-x="950"
+        data-y="3000"
+        data-rotate="90"
+        data-scale="5"
+      >
         <h2 style="color: #c1c1c1">曾致力于</h2>
         <ul style="color: #c1c1c8">
           <li>· 青岛格兰德信用管理咨询有限公司</li>
@@ -161,7 +230,13 @@
         </ul>
       </div>
 
-      <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+      <div
+        id="imagination"
+        class="step"
+        data-x="6700"
+        data-y="-300"
+        data-scale="6"
+      >
         <h2>专业技能</h2>
         <ul>
           <li>· 移动端：vue</li>
@@ -171,20 +246,39 @@
         </ul>
       </div>
 
-      <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4" style="color: #6aa9ec">
+      <div
+        id="source"
+        class="step"
+        data-x="6300"
+        data-y="2000"
+        data-rotate="20"
+        data-scale="4"
+        style="color: #6aa9ec"
+      >
         <h2>项目展示</h2>
         <ul>
           <li><a href="https://www.cuiqq.com/urging#/">催全球</a></li>
           <li><a href="https://www.x315.com/">信用视界</a></li>
           <li><a href="https://www.vsigo.cn">视客眼镜网</a></li>
-          <li>大蓝营销 <img src="../assets/img/dlyx.jpg" alt=""></li>
-          <li>信融易 <img src="../assets/img/xry.jpg" alt=""></li>
+          <li>大蓝营销 <img src="../assets/img/dlyx.jpg" alt="" /></li>
+          <li>信融易 <img src="../assets/img/xry.jpg" alt="" /></li>
           <li>...</li>
         </ul>
       </div>
 
-      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p> <span style="margin-right: 10px; font-size: 40px; color: #ff4466">路遥知马力 日久见人心  </span>  i wait you </p>
+      <div
+        id="one-more-thing"
+        class="step"
+        data-x="6000"
+        data-y="4000"
+        data-scale="2"
+      >
+        <p>
+          <span style="margin-right: 10px; font-size: 40px; color: #ff4466"
+            >路遥知马力 日久见人心
+          </span>
+          i wait you
+        </p>
       </div>
 
       <!--
@@ -197,23 +291,41 @@
           当然你也可以沿着z轴旋转`data-rotate-z`——我想你猜到了，这和`data-rotate`是一个效果。
 
       -->
-      <div id="its-in-3d" class="step" data-x="6200" data-y="4400" data-z="-100" data-rotate-x="-40" data-rotate-y="20" data-scale="2">
+      <div
+        id="its-in-3d"
+        class="step"
+        data-x="6200"
+        data-y="4400"
+        data-z="-100"
+        data-rotate-x="-40"
+        data-rotate-y="20"
+        data-scale="2"
+      >
         <h3>联系方式</h3>
         <div class="step_one">
-          <div style="display: block; margin-bottom: 10px; color: #46bd87"> <span style="color: #eee">电话</span>：17865356192</div>
-          <div style="display: block; margin-bottom: 10px; color: #46bd87"> <span style="color: #eee">邮箱</span>：keycode86@outlook.com</div>
-          <div style="display: block; margin-bottom: 5px; color: #46bd87"> <span style="color: #eee">博客</span>：<a href="https://kora-kr.github.io/">https://kora-kr.github.io/</a></div>
+          <div style="display: block; margin-bottom: 10px; color: #46bd87">
+            <span style="color: #eee">电话</span>：17865356192
+          </div>
+          <div style="display: block; margin-bottom: 10px; color: #46bd87">
+            <span style="color: #eee">邮箱</span>：keycode86@outlook.com
+          </div>
+          <div style="display: block; margin-bottom: 5px; color: #46bd87">
+            <span style="color: #eee">博客</span>：<a
+              href="https://kora-kr.github.io/"
+              >https://kora-kr.github.io/</a
+            >
+          </div>
 
           <div style="width: 33%; float: left">
-            <img src="../assets/img/wx.jpg" class="wx" alt="微信扫码">
+            <img src="../assets/img/wx.jpg" class="wx" alt="微信扫码" />
             <p style="font-size: 20px; color: #eee">微信</p>
           </div>
           <div style="width: 33%; float: left">
-            <img src="../assets/img/zfb.jpg"  class="wx zfb" alt="支付宝扫码">
+            <img src="../assets/img/zfb.jpg" class="wx zfb" alt="支付宝扫码" />
             <p style="font-size: 20px; color: #eee">支付宝</p>
           </div>
           <div style="width: 33%; float: left">
-            <img src="../assets/img/gzh.jpg"  class="wx zfb" alt="公众号关注">
+            <img src="../assets/img/gzh.jpg" class="wx zfb" alt="公众号关注" />
             <p style="font-size: 20px; color: #eee">公众号</p>
           </div>
         </div>
@@ -232,8 +344,13 @@
           https://developer.mozilla.org/en/CSS/transform
 
       -->
-      <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
-
+      <div
+        id="overview"
+        class="step"
+        data-x="3000"
+        data-y="1500"
+        data-scale="10"
+      ></div>
     </div>
 
     <!--
@@ -260,40 +377,116 @@
 </template>
 
 <script>
-
-  export default {
-    name: 'phpResume',
-    props: [],
-    computed: {},
-    methods: {
-      handleClickPrev() {impress().prev()},
-      handleClickNext() {impress().next()},
-      handleClickToHome() {
-        this.$router.push({name:'home', params: { flag: 'back' }})
-      }
-    }
-  }
-
+export default {
+  name: "phpResume",
+  props: [],
+  computed: {},
+  methods: {
+    handleClickPrev() {
+      impress().prev();
+    },
+    handleClickNext() {
+      impress().next();
+    },
+    handleClickToHome() {
+      this.$router.push({ name: "home", params: { flag: "back" } });
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .hint{position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 20%; font-size: .8em; z-index: 999999!important; color: #fff; opacity: 1!important;}
-  .hint>p{padding-bottom: 10px; margin-bottom: 0; box-sizing: border-box; border-bottom: 1px solid #eee}
-  .hint>div{display: flex; justify-content: space-around; align-items: center; line-height: 50px; text-align: center; cursor: pointer}
-  .hint>div>div{line-height: 50px; transition: all .3s linear}
-  .hint>div>div:hover{color: #72b182; font-weight: 600}
+.hint {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  font-size: 0.8em;
+  z-index: 999999 !important;
+  color: #fff;
+  opacity: 1 !important;
+}
+.hint > p {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+.hint > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.hint > div > div {
+  line-height: 50px;
+  transition: all 0.3s linear;
+}
+.hint > div > div:hover {
+  color: #72b182;
+  font-weight: 600;
+}
 
-  .step_one{padding: 20px; box-sizing: border-box; width: 100%; height: 400px; border: 1px solid #eee; background: #fff; box-shadow: 0  0 5px #eee; border-radius: 6px}
+.step_one {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0 0 5px #eee;
+  border-radius: 6px;
+}
 
-  .animates{animation: kr .6s linear alternate infinite; position: relative; top:0; left: 0}
-  @keyframes kr {
-    from {top: -14px}
-    to {top: 0}
+.animates {
+  animation: kr 0.6s linear alternate infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes kr {
+  from {
+    top: -14px;
   }
+  to {
+    top: 0;
+  }
+}
 
-  li{position: relative; top: 0; left: 0; text-align: center; list-style: none; cursor: pointer}
-  li>img{position: absolute; top: 50%; right: 20%; transform: translate(-50%, -50%); width: 100px; height: auto; opacity: 0; transition: all .3s linear}
-  li:hover>img{opacity: 1}
+li {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+}
+li > img {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+li:hover > img {
+  opacity: 1;
+}
 
-  .wx{position: relative; top: 50%; left: 50%; transform: translate(-50%, 15%);width: 160px; height: 160px; border-radius: 10px; border: 1px solid #eee; box-shadow: 0 0 5px #eee}
+.wx {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px #eee;
+}
 </style>

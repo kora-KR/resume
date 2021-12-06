@@ -18,6 +18,7 @@ export default new Router({
 			path: '/php',
 			meta: { title: '', keepAlive: false },
 			component: (resolve) => require(['../pages/php.vue'], resolve)
-		}
+		},
+		{ path: '*', component: (resolve) => require(['../pages/php.vue'], resolve) }
 	]
 })

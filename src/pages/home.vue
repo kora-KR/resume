@@ -191,13 +191,13 @@ html {
         console.log(0);
       });
       await this.progressivelyShowResume().then(() => {
-        console.warn("简直不要太棒了1");
+        // console.warn("简直不要太棒了1");
       });
       await this.progressivelyShowStyle(1).then(() => {
         console.log(1);
       });
       await this.showHtml().then(() => {
-        console.warn("简直不要太棒了2");
+        // console.warn("简直不要太棒了2");
       });
       await this.progressivelyShowStyle(2).then(() => {
         console.log(2), (this.svgShow = true);

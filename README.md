@@ -1,20 +1,24 @@
 # marked.js（CSS）+ impress.js（PPT） 双模板简历 
 
-> This is my resume
-
-[ 预览 ](https://www.koras.cn)
-#### callme：17865356192
+## 在线预览
+[ 预览传送门 ](http://koras.gitee.io/korains_resume)
+## 联系管理员
+callME：13370825981
 
 ## 使用方法
 
 ``` bash
+// 下载启动
 git clone git@github.com:kora-KR/resume.git
 cd resume
 npm install
 npm run dev
+
+// 配置打包
+npm run build
 ```
 
-## 部署方法
+## 部署备注
 
 
 1. 编辑 config/index.js，修改第 10 行的 assetsPublicPath，值为 `项目名/dist`。如果你没有修改项目名 animating-resume，则可跳过此步骤。
@@ -27,5 +31,5 @@ npm run dev
     git push
     ```
 
-3. 开启 GitHub Pages 功能
+3. 开启 GitHub Pages/Gitee Pages 功能
 

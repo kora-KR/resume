@@ -5,17 +5,15 @@
 
       <h1>
         <svg width="100%" height="60">
-          <text text-anchor="middle" x="50%" y="50%" class="text text-1">
-            开启美好时光
-          </text>
-          <text text-anchor="middle" x="50%" y="50%" class="text text-2">
-            开启美好时光
-          </text>
-          <text text-anchor="middle" x="50%" y="50%" class="text text-3">
-            开启美好时光
-          </text>
-          <text text-anchor="middle" x="50%" y="50%" class="text text-4">
-            开启美好时光
+          <text
+            v-for="(item, index) of 4"
+            :key="item.id"
+            text-anchor="middle"
+            x="50%"
+            y="50%"
+            :class="['text', 'text-' + (index + 1)]"
+          >
+            路遥知马力，日久见人心
           </text>
         </svg>
       </h1>
@@ -77,7 +75,7 @@ export default {
 }
 .cover > main {
   position: absolute;
-  top: 40%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -92,7 +90,7 @@ export default {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  color: #72b182;
+  color: #7cbb8c;
   font-size: 20px;
 }
 .btn_all > div {
@@ -119,6 +117,7 @@ export default {
 .cover > main > img {
   width: 200px;
   animation: jump 1s infinite linear;
+  box-shadow: 0 0 8px #72b182;
 }
 @keyframes jump {
   0% {

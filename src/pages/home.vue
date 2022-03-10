@@ -17,9 +17,14 @@
     ></ResumeEditor>
 
     <aside class="back" @click="handleClickShowOrder">
-      <span>返回首页</span>
-      <svg v-if="svgShow" height="50" width="150">
-        <rect id="shape" height="50" width="150" />
+      <span>&lt;返回首页&gt;</span>
+      <svg
+        v-if="svgShow"
+        height="30"
+        width="150"
+        style="position: relative; top: -5px"
+      >
+        <rect id="shape" height="30" width="150" />
       </svg>
     </aside>
   </section>
@@ -148,29 +153,33 @@ html {
 技能
 ----
 
-* PC开发
-* 移动端开发
-* 小程序开发
-* es6+/TS/SEO/NODE...
+* css、less、sass、stylus、windi
+* vue、react、uniapp、wechart、ionic
+* node、express、es6+、微信、支付宝、加密
+
+开源
+----
+
+* <a target='_blank' href='https://www.npmjs.com/package/inx-shell'>框架封装[INX]</a>
+* <a target='_blank' href='http://test.hhxinfo.com/drag/#/'>拖拽平台[Drag]</a>
 
 工作经历
+---- 
+* 青岛海华信科技技术有限公司
+* 青岛格兰德信用管理咨询有限公司
+* 北京博瑞开源网络科技有限公司
+* 南京视客眼镜网
+
+友情链接
 ----
+* <a target='_blank' href='https://gitee.com/koras'>码云</a>
+* <a target='_blank' href='https://www.zhihu.com/people/keycode'>知乎</a> 
+* <a target='_blank' href='https://github.com/kora-KR'>gitHub</a>
+* <a target='_blank' href='https://kora-kr.github.io/'>个人博客</a>
 
-1. 北京博瑞开源
-2. 青岛格兰德
-3. 南京视客眼镜
+> 如果你喜欢这个效果，Fork <a target='_blank' href='https://github.com/kora-KR/resume'>我的项目</a>，打造你自己的简历！
 
-链接
-----
-
-* [个人博客](https://kora-kr.github.io/)
-* [GitHub](https://github.com/kora-KR)
-* [码云](https://gitee.com/koras)
-* [知乎](https://www.zhihu.com/people/keycode/activities)
-
-> 如果你喜欢这个效果，Fork [我的项目](https://github.com/kora-KR)，打造你自己的简历！
-
-:::tip 点击底部 - 导航 - 查看PPT，更多资料等你解锁~  ☀☀☀☀☀
+☀☀☀☀☀ 点击底部 - <返回首页> - 查看PPT展示，更多资料等你解锁~  ☀☀☀☀☀
 
 `,
     };
@@ -179,7 +188,6 @@ html {
     // 默认开始不展示,通过点击事件触发
     // this.makeResume()
   },
-  beforeCreate() {},
   methods: {
     showCss() {
       this.resumeShow = "resumeShow";
@@ -266,7 +274,6 @@ html {
         showResume();
       });
     },
-
     handleClickShowOrder() {
       this.resumeShow = "resumeHide";
     },
@@ -290,7 +297,7 @@ html {
 #shape {
   stroke-width: 6px;
   fill: transparent;
-  stroke: #222;
+  /* stroke: #222; */
   stroke-dasharray: 104 300;
   stroke-dashoffset: -220;
   transition: 1s all ease;
@@ -303,11 +310,11 @@ svg:hover #shape {
 }
 .back {
   position: fixed;
-  bottom: 2px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
-  height: 52px;
+  height: 20px;
   font-size: 14px;
   cursor: pointer;
   opacity: 1 !important;
@@ -318,10 +325,15 @@ svg:hover #shape {
   left: 50%;
   z-index: -1;
   transform: translate(-50%, -50%);
-  line-height: 30px;
+  line-height: 20px;
   transition: all 0.3s linear;
+  display: inline-block;
+  width: 80px;
 }
 .back:hover > span {
   color: #72b182;
+}
+a {
+  text-decoration: none;
 }
 </style>
